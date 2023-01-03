@@ -38,12 +38,23 @@
 				</a>
 		
 			</div>
-		
-		
 
+		<?php else: ?>
+		
+			<div class="custom-header-tagline">
+				<a href="/">
+					<h2>
+						<?php bloginfo( 'tagline' ); ?>
+					</h2>
+				</a>
+			</div>
 		
 		<?php endif; // End header image check. ?>
-	
+				
+		<h2 class="custom-site-description">
+			<?php bloginfo( 'tagline' ); ?>
+		</h2>
+
 		<div id="pre-header">
 		<div class="wrap-safari">
 		<div id="pre-header-core" class="main-navigation">

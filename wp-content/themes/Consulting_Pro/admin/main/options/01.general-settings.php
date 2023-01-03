@@ -27,19 +27,21 @@ global $thinkup_general_sitedescription;
 				$output .= '<img src="' . esc_url( $thinkup_general_logolink ) . '" alt="' . esc_attr__( 'Logo', 'consulting' ) . '">';
 				$output .= '</a>';
 			}
-		} else if ( $thinkup_general_logoswitch == "option2" or empty( $thinkup_general_logoswitch ) ) {
-
-			$output .= '<a rel="home" href="' . esc_url( home_url( '/' ) ) . '">';
-
-				if ( ! empty( $thinkup_general_sitetitle ) ) {
-					$output .= '<h1 rel="home" class="site-title" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">' . esc_html( $thinkup_general_sitetitle ) . '</h1>';
-				}
-				if ( ! empty( $thinkup_general_sitedescription ) ) {
-					$output .= '<h2 class="site-description">' . esc_html( $thinkup_general_sitedescription ) . '</h2>';
-				}
-
-			$output .= '</a>';
 		}
+		// Lacy Morrow - 2020-05-06 11:30:00 -0500 Removing this site identity code, because its dumb as hell.
+		// else if ( $thinkup_general_logoswitch == "option2" or empty( $thinkup_general_logoswitch ) ) {
+
+		// 	$output .= '<a rel="home" href="' . esc_url( home_url( '/' ) ) . '">';
+
+		// 		if ( ! empty( $thinkup_general_sitetitle ) ) {
+		// 			$output .= '<h1 rel="home" class="site-title" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">' . esc_html( $thinkup_general_sitetitle ) . '</h1>';
+		// 		}
+		// 		if ( ! empty( $thinkup_general_sitedescription ) ) {
+		// 			$output .= '<h2 class="site-description">' . esc_html( $thinkup_general_sitedescription ) . '</h2>';
+		// 		}
+
+		// 	$output .= '</a>';
+		// }
 
 	} else {
 
