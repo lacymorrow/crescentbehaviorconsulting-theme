@@ -39,8 +39,8 @@
 		
 			</div>
 
-		<?php else: ?>
-		
+		<?php elseif ( ! empty ( bloginfo( 'tagline' ) ) ):  ?> 
+			
 			<div class="custom-header-tagline">
 				<a href="/">
 					<h2>
@@ -50,10 +50,12 @@
 			</div>
 		
 		<?php endif; // End header image check. ?>
-				
-		<h2 class="custom-site-description">
-			<?php bloginfo( 'tagline' ); ?>
-		</h2>
+		
+		<?php if ( ! empty ( bloginfo( 'description' ) ) ):  ?>
+			<h2 class="custom-site-description">
+				<?php bloginfo( 'description' ); ?>
+			</h2>
+		<?php endif; ?>
 
 		<div id="pre-header">
 		<div class="wrap-safari">

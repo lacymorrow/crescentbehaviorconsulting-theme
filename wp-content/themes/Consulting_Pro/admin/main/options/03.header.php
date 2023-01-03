@@ -178,9 +178,13 @@ if ( empty( $_thinkup_meta_headerstyle ) or $_thinkup_meta_headerstyle == 'optio
 
 			<?php echo $class_header2_searchstart; ?>
 
-			<div id="logo">
-			<?php /* Custom Logo */ echo thinkup_custom_logo(); ?>
-			</div>
+			<?php
+				/* Lacy Morrow - 2020-05-06 11:30:00 -0500 Removing this site identity code, because its dumb as hell.
+				<div id="logo">
+				<?php echo thinkup_custom_logo(); ?>
+				</div>
+				*/ 
+			?>
 
 			<?php if ( $class_header2_searchshow == '1' ) { thinkup_input_headersearch(); } ?>
 
