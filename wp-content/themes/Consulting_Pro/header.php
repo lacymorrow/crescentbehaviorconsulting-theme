@@ -39,23 +39,7 @@
 		
 			</div>
 
-		<?php elseif ( ! empty ( bloginfo( 'tagline' ) ) ):  ?> 
-			
-			<div class="custom-header-tagline">
-				<a href="/">
-					<h2>
-						<?php bloginfo( 'tagline' ); ?>
-					</h2>
-				</a>
-			</div>
-		
 		<?php endif; // End header image check. ?>
-		
-		<?php if ( ! empty ( bloginfo( 'description' ) ) ):  ?>
-			<h2 class="custom-site-description">
-				<?php bloginfo( 'description' ); ?>
-			</h2>
-		<?php endif; ?>
 
 		<div id="pre-header">
 		<div class="wrap-safari">
