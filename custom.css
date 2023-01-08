@@ -1,0 +1,301 @@
+:root {
+	--box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	--border-radius: 5px;
+	--bg-color: #2c5c59;
+	--bg-rgb: rgb(44,92,89);
+	--bg-gradient: linear-gradient(90deg, rgba(44,92,89,1) 15%, rgba(134,176,158,1) 100%);	
+}
+
+/* System fonts */
+*:not(.fa) {
+	font-family: Calibri, Helvetica, system-ui, sans-serif;
+}
+
+#header-core {
+	display: flex;
+}
+/* Navbar fonts bigger */
+#header .header-links > ul > li a, #header-sticky .header-links > ul > li a {
+	font-size: 1.9rem;
+}
+
+/* Navbar no caps */
+#header .header-links li a, #header-sticky .header-links li a {
+	text-transform: caps-lock-indicator;
+}
+
+/* Navbar hide wonk */
+#header-links-inner > .menu, #header-search, #header-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Mobile Navbar */
+@media (max-width: 1068px) {
+	#header {
+		display: flex;
+		justify-content: end;
+	}
+
+	#header-core {
+		width: auto;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/* Make hero blurb slimmer */
+#introaction-core {
+	padding: 1rem;
+	max-width: 850px;
+}
+
+/* Aligns blurb left on mobile */
+#introaction-core .action-text {
+	text-align: left;
+}
+
+@media (min-width: 640px) {
+	#introaction-core .action-text {
+		text-align: center;
+	}
+}
+
+/* Makes the blurb smaller */
+#introaction-core h3 {
+	font-size: 2.3rem;
+	letter-spacing: 2.5px;
+	color: #666;
+}
+
+/* Turns the icons green */
+.services-builder.style1 .iconimage i.fa {
+	background-color: #4f615f;
+}
+
+/* Make text bigger */
+.services-builder.style1 .iconmain h3 {
+	font-size: 2.8rem;
+}
+
+.services-builder.style1 .iconmain p {
+	font-size: 1.6rem;
+}
+
+/* Page padding color -> white */
+#intro {
+	background-color: transparent;
+}
+
+.wpforms-container.wpf-center {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 320px;
+}
+
+.header-style1 #header {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #646970;
+}
+.pre-header-style2 #pre-header {
+    background: #FFF;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #646970;
+}
+.custom-header img {
+    display: block;
+    margin: 0px auto;
+}
+.header-style1 #header {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #646970;
+}
+.header-style1.intro-on #header, .header-style1.slider-full #header {
+    border-bottom: 1px solid #646970;
+}
+/* pages title color change */
+#intro .page-title {
+	display: block;
+	padding: 1.2rem 3rem;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	position: relative;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: unset;
+	background-color: var(--bg-color);
+	background: var(--bg-rgb);
+	background: var(--bg-gradient);
+}
+
+/* Make green bar larger */
+#intro.option1 .page-title,
+#intro.option2 .page-title {
+    width: unset;
+}
+
+/* Contact form text color change */
+.wpforms-title {
+	color: #000000
+}
+.wpforms-field {
+	color: #000000
+}
+	
+div.wpforms-container-full .wpforms-form .wpforms-field-label,
+button.wpforms-submit
+{
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+
+/* Widget box color change */
+.services-builder.style1 {
+	text-align: center;
+	background: #2c5c59;
+	border: 1px solid #eee;
+	margin: 0 0 20px;
+	padding: 20px;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	background-color: var(--bg-color);
+	background: var(--bg-rgb);
+	background: var(--bg-gradient);
+}
+/* Widget icon background color change */
+.services-builder.style1 .iconimage i.fa {
+    background-color: #000000b3;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #f4f4f4;
+    clear: both;
+    margin: 0 0 0.8em;
+    line-height: 1.5;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+body, button, input, select, textarea {
+    color: #f4f4f4;
+    font-size: 13px;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+/* Remove breadcrumbs */
+#intro #breadcrumbs-core {
+    display:none;
+}
+
+/* Change background color to white */
+body.custom-background {
+    background-color: #ffffff;
+}
+
+/* Change button color for read more */
+a.themebutton2 {
+    color: #000000d1;
+    background: #FFF;
+}
+
+/* Remove max-width for body content */
+body.layout-boxed #body-core, body.custom-background #body-core,
+body.layout-boxed #pre-header, body.layout-boxed #header, body.layout-boxed #header-sticky, body.custom-background #pre-header, body.custom-background #header, body.custom-background #header-sticky {
+    max-width: unset;
+}
+
+/* Read more button hover color and border change */
+.themebutton2:hover {
+	color: #FFF;
+	background: #7ea9d0;
+	border-color: #7ea9d0;
+}
+
+/* Remove icons from widgets */
+.services-builder.style1 .iconimage i.fa {
+/* 	display:none */
+}
+
+/* Remove icon space from widgets */
+.services-builder.style1 .iconimage {
+    width: auto;
+    overflow: visible;
+}
+
+/* Make widget under font bigger */
+.services-builder.style1 .iconmain p {
+    font-size: 1.7rem;
+}
+
+/* Career button color and size change */
+.wp-block-button__link {
+    color: #fff;
+    background-color: #2c5c59;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.5em;
+}
+/* Confirmation message color change */
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: #699472;
+    border: 1px solid #699472;
+    box-sizing: border-box;
+}
+
+/* Menu bar hover color change */
+#header .menu > li.menu-hover > a,
+#header .menu > li.current-menu-item > a,
+#header .menu > li.current-menu-ancestor > a,
+#header .menu > li > a:hover,
+#header-sticky .menu > li.menu-hover > a,
+#header-sticky .menu > li.current-menu-item > a,
+#header-sticky .menu > li.current-menu-ancestor > a,
+#header-sticky .menu > li > a:hover {
+	color: #7ea9d0
+}
+
+/* Footer text size/color */
+.action-text h3 {
+    position: relative;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 0x;
+    color: #646464;
+}
+
+/* Change line color and location under teaser message */
+.action-text h3:after {
+    left: -40px;
+    right: 100;
+    border-bottom: 2px solid #ffffff;
+}
+
+#sub-footer a {
+    color: #7ea9d0;
+}
+
+/* Remove the footer completely */
+footer {
+/* 	display: none; */
+}
+
+/*Shrink Header Logo img */
+#site-header .custom-header {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 640px;
+    height:auto;
+}
